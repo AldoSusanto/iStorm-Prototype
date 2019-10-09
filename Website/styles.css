@@ -1,0 +1,211 @@
+#map{
+    height: 90%;
+    width: 80%;
+    float: left;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #222;
+}
+
+/* --- menubar --- */
+.navbar {
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+header{
+    background: #bfbfbf;
+    
+}
+
+.istorm{
+    color: #203d64;
+    padding: 8px 10px;
+    margin: 5px 10px;
+    float: left;
+}
+.istorm a{
+    text-decoration: none;
+    color: #203d64;
+    font-weight: 1000;
+    font-family:sans-serif;
+    font-size: 30px;
+}
+
+.logo{
+    float: left;
+    padding: 10px 0;
+    height: 50px;
+}
+
+
+nav{
+    float: right;
+}
+
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    position: relative;
+    padding-top: 25px;
+}
+
+nav a{
+    color: #203d64;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 30px 25px;
+    margin: 0px 0px;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover{
+    color: #203d64;
+    font-weight: 600;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #203d64;
+    position: absolute;
+    top: 0; 
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* --- Legend on top of the map --- */
+
+#legend{
+    font-family: sans-serif;
+    font-size: 12px;
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+    border: 3px solid #203d64;
+}
+
+/* --- Widget --- */
+
+#widget{
+    height: 90%;
+    width: 20%;
+    float: right;
+    background: #bfbfbf;
+    padding: 0px;
+    position: relative;
+    
+}
+
+div#widget ul{
+    margin: 35px 0px 0px 0px;
+    padding: 0;
+    list-style: none;
+}
+
+.caret{
+    cursor: pointer;
+    user-select: none;
+}
+
+.caret::before{
+    content: "+";
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nested{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+
+div#widget ul li{
+    color: #203d64;
+    padding: 25px 5px;
+    margin: 10px;
+    font-family: sans-serif;
+    transition: all ease-in-out 250ms;
+    border-radius: 15px; 
+    cursor: pointer;
+    user-select: none;
+}
+
+div#widget ul li span{
+    color: #203d64;
+    padding: 25px 30px;
+    margin: 25px 0px;
+    padding-left: 10px;
+    font-family: sans-serif;
+    transition: all ease-in-out 250ms;
+    border-radius: 10px; 
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    background: #cccccc;
+}
+
+div#widget ul li span:hover{
+    color: 203d64;
+    font-weight: 600;
+    background: #cccccc;
+}
+
+div#widget ul li .options{
+    margin-left: 20px;
+}
+
+div#widget ul li .options:hover{
+    color: 203d64;
+    font-weight: 600;
+    background: #cccccc;
+}
+
+div#widget ul li img{
+    margin: 0px 10px;
+}
+
+div#widget .torresLogo{
+    margin: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 60%;
+}
+
+

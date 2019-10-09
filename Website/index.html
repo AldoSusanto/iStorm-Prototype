@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>iFlood Prototype Project</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['line']});
+
+    </script>
+    <script type="text/javascript" src="coordinates.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<!--#203d64-->
+
+<body onload="treeView('caret')">
+  <header>
+       <div class="navbar">
+           <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+           <h1 class="istorm"><a href="index.html">iStorm</a></h1>
+
+           <nav>
+               <ul>
+                   <li><a href="#">MAP</a></li>
+                   <li><a href="#">ABOUT</a></li>
+                   <li><a href="#">ALERTS</a></li>
+                   <li><a href="#">CONTACT</a></li>
+               </ul>
+
+           </nav>
+       </div>
+   </header>
+   
+   <div id="main">
+        <div id="map">
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArchg7I5f7xVJn_SOoMRqqmr6i8Dc9Zvo&callback=initMap" async defer></script>
+        </div>
+       <div id="widget">
+          <ul id="myUL">
+              <li><span class="caret">Real-Time Inundation</span>
+                <ul class="nested">
+                   <li class="options" onclick="clearMarkers(1)"><img src="img/green-sidebar.png">Wet/Dry Sensor</li>
+                   <li class="options" onclick="clearMarkers(2)"><img src="img/blue-sidebar.png" >Time Series Sensor</li>
+                </ul>
+                  
+              </li>
+              <li><span class="caret">Forecast (+1 hour)</span></li>
+              <li><span class="caret">Forecast (+6 hour)</span></li>
+              <li><span class="caret">Forecast (+12 hour)</span></li>
+          </ul>
+           
+           
+           <a href="https://www.torresassociatesllc.com/"><img class="torresLogo" src="img/torresLogo.png"></a>
+       </div>
+
+    </div>
+    
+    <div id="legend"></div>
+
+
+    
+    
+    
+
+</body>
+</html>
+
+
